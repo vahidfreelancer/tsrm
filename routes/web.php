@@ -43,7 +43,7 @@ Route::get('/issuereport', function () {
 })->middleware(['auth', 'verified'])->name('bugreport');
 
 Route::get('/updates', function () {
-    return view('dashboard');
+    return view('project');
 })->middleware(['auth', 'verified'])->name('news');
 
 Route::get('/admin/managerelease', function () {

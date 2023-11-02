@@ -17,10 +17,16 @@
                     </x-nav-link>
                 </div>
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('bugreport')" :active="request()->routeIs('bugreport')">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex " >
+
+                    <x-nav-link :href="route('bugreport')" :active="request()->routeIs('bugreport')" 
+                        
+                        class="hidden"
+                        
+                        >
                         {{ __('Issue report') }}
                     </x-nav-link>
+                    
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -30,7 +36,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('admin.releasemanager')" :active="request()->routeIs('admin.releasemanager')">
+                    <x-nav-link :href="route('admin.releasemanager')" :active="request()->routeIs('admin.releasemanager')" class="hidden">
                         {{ __('Release management') }}
                     </x-nav-link>
                 </div>
